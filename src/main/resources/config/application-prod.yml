@@ -54,13 +54,6 @@ spring:
       hibernate.order_updates: true
       hibernate.query.fail_on_pagination_over_collection_fetch: true
       hibernate.query.in_clause_parameter_padding: true
-  data:
-    jest:
-      uri: http://localhost:9200
-  # see https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-nosql.html#boot-features-connecting-to-elasticsearch-jest
-  elasticsearch:
-    rest:
-      uris: http://localhost:9200
   # Replace by 'prod, faker' to add the faker context and have sample data loaded in production
   liquibase:
     contexts: prod
@@ -120,7 +113,7 @@ jhipster:
         # - In the JHipster Registry (which includes a Spring Cloud Config server)
         # - In a separate `application-prod.yml` file, in the same folder as your executable JAR file
         # - In the `JHIPSTER_SECURITY_AUTHENTICATION_JWT_BASE64_SECRET` environment variable
-        base64-secret: ZDFmNTQzMDA1NDA5MDZkOTI0MDg0YjNmYTU4NWQ5MDI1MDFhNmRlZTlkY2IyY2I5Y2M4NjkyODgzMzUzYzA0MTEzN2I4YWY0MTAxNWQ3YjEyNWMzNTViZjQxMzVjMzhkYmZmY2ZmOWI0YjEwZGQ1MTYxY2E4MGZjMGRkMmRiOWU=
+        base64-secret: MWFkM2ZiZTlkMDMyNzZiMGJlY2Y0YzgxNjNiYjdlYTNiMDIzMmQzZmFlMDQyYmQ3MWFhNWFmY2NmYmIyMzFkMDc3MjY4ODBjZDdkZWFkYmViNzg5OWI2MmI3NjNjOGJiZDYwNzI3MzBjMjk1ZDY1ZDEzMTU2YmIwMTExYWQ5ODA=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000
