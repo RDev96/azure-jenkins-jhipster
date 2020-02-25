@@ -19,3 +19,12 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "62edb26a-d1af-41d2-97d5-9f27815a739c"
+  app: jhipster-devops-spring
+  on:
+    branch: master
+skip_cleanup: true
